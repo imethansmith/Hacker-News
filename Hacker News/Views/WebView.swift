@@ -18,7 +18,8 @@ struct WebView: UIViewRepresentable {
     
     func updateUIView(_ uiView: WKWebView, context: Context) {
         if let safeString = urlString {
-            if let url = URL(string: safeString) {
+            let formattedString = safeString.hasPrefix("http") ? safeString : "http://\(safeString)"
+            if let url = URL(string: formattedString) {
                 let request = URLRequest(url: url)
                 uiView.load(request)
             }
