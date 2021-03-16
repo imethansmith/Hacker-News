@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E5994B92600A032007DED7B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5994B82600A032007DED7B /* NetworkManager.swift */; };
+		3E5994BE2600A130007DED7B /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5994BD2600A130007DED7B /* PostData.swift */; };
 		3E672B83260099D700A42219 /* Hacker_NewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E672B82260099D700A42219 /* Hacker_NewsApp.swift */; };
 		3E672B85260099D700A42219 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E672B84260099D700A42219 /* ContentView.swift */; };
 		3E672B87260099DB00A42219 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E672B86260099DB00A42219 /* Assets.xcassets */; };
@@ -33,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E5994B82600A032007DED7B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		3E5994BD2600A130007DED7B /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		3E672B7F260099D700A42219 /* Hacker News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hacker News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E672B82260099D700A42219 /* Hacker_NewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hacker_NewsApp.swift; sourceTree = "<group>"; };
 		3E672B84260099D700A42219 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +76,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E5994B72600A024007DED7B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3E5994B82600A032007DED7B /* NetworkManager.swift */,
+				3E5994BD2600A130007DED7B /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		3E672B76260099D700A42219 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +110,7 @@
 			children = (
 				3E672B82260099D700A42219 /* Hacker_NewsApp.swift */,
 				3E672B84260099D700A42219 /* ContentView.swift */,
+				3E5994B72600A024007DED7B /* Models */,
 				3E672B86260099DB00A42219 /* Assets.xcassets */,
 				3E672B8B260099DB00A42219 /* Info.plist */,
 				3E672B88260099DB00A42219 /* Preview Content */,
@@ -259,6 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E5994B92600A032007DED7B /* NetworkManager.swift in Sources */,
+				3E5994BE2600A130007DED7B /* PostData.swift in Sources */,
 				3E672B85260099D700A42219 /* ContentView.swift in Sources */,
 				3E672B83260099D700A42219 /* Hacker_NewsApp.swift in Sources */,
 			);
@@ -422,7 +438,7 @@
 				DEVELOPMENT_TEAM = 4349JC4AHG;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Hacker News/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -444,7 +460,7 @@
 				DEVELOPMENT_TEAM = 4349JC4AHG;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Hacker News/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
